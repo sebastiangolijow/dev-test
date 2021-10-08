@@ -9,11 +9,3 @@ export function allItems(id) {
     };
 }
 
-
-export function getDetails(id){
-  return function(dispatch){
-    dispatch({
-    type:'DETAIL',
-    payload: id
-  })
-}}

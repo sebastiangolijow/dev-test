@@ -15,11 +15,6 @@ function Reducer(state = InitialState, action) {
             ...state,
             Items: action.payload
         };
-        case 'DETAIL': 
-        return {
-         ...state,
-         Item: state.Items.find((el) => el.author_id === action.payload)
-        };
       default:
         return state;
     }
